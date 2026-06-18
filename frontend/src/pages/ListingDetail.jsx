@@ -209,7 +209,7 @@ export default function ListingDetail() {
               {listing.type === 'sell' && !isOwner && user && !purchaseSuccess && (
                 <button
                   onClick={() => setShowPayment(true)}
-                  className="w-full bg-primary text-on-primary hover:bg-primary/90 py-3 rounded-full font-bold text-body-sm shadow-md transition-all active:scale-95 flex items-center justify-cent[...]
+                  className="w-full bg-primary text-on-primary hover:bg-primary/90 py-3 rounded-full font-bold text-body-sm shadow-md transition-all active:scale-95 flex items-center justify-center gap-1.5 mt-4"
                 >
                   <span className="material-symbols-outlined text-[18px]">shopping_cart</span>
                   Buy Product Now
@@ -252,7 +252,7 @@ export default function ListingDetail() {
                       placeholder="Enter your message details, questions, or collaboration requests..."
                       value={message}
                       onChange={(e) => setMessage(e.target.value)}
-                      className="w-full bg-surface border border-outline-variant text-primary text-body-sm px-4 py-3 rounded-xl focus:outline-none focus:border-secondary transition-all placeholde[...]
+                      className="w-full bg-surface border border-outline-variant text-primary text-body-sm px-4 py-3 rounded-xl focus:outline-none focus:border-secondary transition-all placeholder:text-on-surface-variant"
                     />
                     <button
                       type="submit"
